@@ -3,7 +3,7 @@ import { readOCR, performOCR } from './ocr'
 import { detectFaces, analyzeFace } from './face'
 import { analyzeSentiment, extractKeyPhrases } from './language'
 import { translateText } from './translator'
-import { analyzeDocument } from './formrecognizer'
+import { analyzeDocument } from './formRecognizer'
 
 const app = express()
 const port = 3000
@@ -39,6 +39,6 @@ app.listen(port, async () => {
   // console.log(translatedText)
 
   // FormRecognizer
-  // const formRecognizer = await analyzeDocument('https://images.ctfassets.net/txhaodyqr481/3uHrou4XfYB2qu1xFtvbHq/5b28faf7e9ad25dc12b5f8522d81a82f/receiptarticle.jpg')
-  // console.log(formRecognizer)
+  // const formRecognizerData = await analyzeDocument('https://images.ctfassets.net/txhaodyqr481/3uHrou4XfYB2qu1xFtvbHq/5b28faf7e9ad25dc12b5f8522d81a82f/receiptarticle.jpg')
+  // console.log(formRecognizerData)
 })
